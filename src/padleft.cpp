@@ -6,7 +6,7 @@ namespace pl {
 
 std::string pad_left(const std::string& str, int num_spaces)
 {
-  //unsigned int num_spaces_un = num_spaces;
+
   if (num_spaces < 0){
 
     return str;
