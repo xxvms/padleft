@@ -6,11 +6,16 @@ namespace pl {
 
 std::string pad_left(const std::string& str, int num_spaces)
 {
-    std::string out = str;
-    for (int i = 0; i < num_spaces; i++) {
-        out = " " + out;
-    }
-    return out;
+  //unsigned int num_spaces_un = num_spaces;
+  if (num_spaces < 0){
+
+    return str;
+  } else {
+
+    std::string out(num_spaces, ' ');
+    return out + str;
+  }
+
 }
 
 }
